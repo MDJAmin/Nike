@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/card.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -452,12 +453,29 @@
 
         <!-- SHOP BY CLASSICS ( card ) -->
         <section>
-<div>
-    <h3>SHOP BY CLASSICS</h3>
-</div>
-<div>
-
-</div>
+            <div>
+                <h3>SHOP BY CLASSICS</h3>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <h2 class="name">Nike Air Max</h2>
+                    <a href="#" class="buy">Buy Now</a>
+                    <div class="circle"></div>
+                    <img class="product" src="./assets/Card Hover product items/green.webp" />
+                </div>
+                <div class="box">
+                    <h2 class="name">Nike Air Max</h2>
+                    <a href="#" class="buy">Buy Now</a>
+                    <div class="circle"></div>
+                    <img class="product" src="./assets/Card Hover product items/blue.webp" />
+                </div>
+                <div class="box">
+                    <h2 class="name">Nike Air Max</h2>
+                    <a href="#" class="buy">Buy Now</a>
+                    <div class="circle"></div>
+                    <img class="product" src="./assets/Card Hover product items/red.webp" />
+                </div>
+            </div>
         </section>
 
         <!-- NIKE MEMBERSHIP -->
@@ -469,7 +487,16 @@
     <footer>
 
     </footer>
-
+    <script src="./js/cardanimation.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 15,
+            speed: 300,
+            easing: "cubic-bezier(.03,.98,.52,.99)",
+            scale: 1.05,
+        });
+    </script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
