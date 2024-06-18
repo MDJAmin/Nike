@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -45,7 +45,7 @@ body {
   transform-style: preserve-3d;
 }
 .container .box::before {
-  content: 'NIKE';
+  content: "NIKE";
   position: absolute;
   top: 20px;
   left: 20px;
@@ -53,11 +53,11 @@ body {
   font-weight: 900;
   color: var(--card-bg-text);
   font-style: italic;
-  opacity: 0;  
+  opacity: 0;
   transition: 0.5s;
 }
 .container .box::after {
-  content: 'SHOES';
+  content: "SHOES";
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -80,7 +80,7 @@ body {
   color: var(--name-color);
   width: 100%;
   transform-style: preserve-3d;
-  transform: translate3d(0,0,75px);
+  transform: translate3d(0, 0, 75px);
   transition: 0.5s;
   opacity: 0;
   z-index: 10;
@@ -94,7 +94,7 @@ body {
   bottom: 0;
   left: 50%;
   transform-style: preserve-3d;
-  transform: translate3d(0,0,75px);
+  transform: translate3d(0, 0, 75px);
   color: #fff;
   background: #333;
   padding: 10px 25px;
@@ -121,7 +121,7 @@ body {
   z-index: 10;
   opacity: 1;
   transform: translate3d(-50%, -50%, 0px);
-} 
+}
 .container .box:hover .circle {
   position: absolute;
   top: 50%;
@@ -135,7 +135,7 @@ body {
   z-index: 10;
   opacity: 1;
   transform: translate3d(-50%, -50%, 35px);
-} 
+}
 
 .container .box .product {
   position: absolute;
@@ -146,10 +146,10 @@ body {
   z-index: 11;
   transition: 0.5s;
   transform-style: preserve-3d;
-  transform: translate3d( -50%, -50%, 0px) rotate(-15deg);
+  transform: translate3d(-50%, -50%, 0px) rotate(-15deg);
 }
 .container .box:hover .product {
-  transform: translate3d( -50%, -50%, 100px) rotate(-15deg);
+  transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
 }
 .container .box:nth-child(1) .circle,
 .container .box:nth-child(1) .buy {
@@ -157,7 +157,7 @@ body {
 }
 .container .box:nth-child(2) .circle,
 .container .box:nth-child(2) .buy {
-  background: #1DA3C3;
+  background: #1da3c3;
 }
 .container .box:nth-child(3) .circle,
 .container .box:nth-child(3) .buy {
