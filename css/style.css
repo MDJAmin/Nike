@@ -3,5 +3,18 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none;
+  list-style: none ;
+  overflow-x: hidden;
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav div.nav-items{
+  background-color: #F5F5F5;
+  height: 45px;
+}
+svg{
+  width: 50px;
+}
+nav div.nav-items a{
+font-size: 0.85em;
 }
