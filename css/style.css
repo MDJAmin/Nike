@@ -37,3 +37,25 @@ div.Help-menu a {
 a#Help:hover div.Help-menu {
 opacity: 1;
 } */
+.nike-logo img {
+  width: 10%;
+}
+.Nav-menu-items {
+  display: flex;
+  padding-right: 100px;
+}
+.Nav-menu-item-Featured > ul {
+  display: none;
+}
+.Nav-menu-item-Men > ul{
+  display: none;
+}
+.Nav-menu-item-Women > ul{
+  display: none;
+}
+.Nav-menu-item-Kids > ul{
+  display: none;
+}
+.Nav-menu-item-Jordan > ul{
+  display: none;
+}
