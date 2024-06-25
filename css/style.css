@@ -37,25 +37,52 @@ div.Help-menu a {
 a#Help:hover div.Help-menu {
 opacity: 1;
 } */
+
+
+
+
+
+/* .nike-logo img {
+  width: 10%;
+}
+header{
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.support-nav-items{
+  display: flex;
+}
+.Nav-menu-items{
+
+} */
+
+
+header {
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
 .nike-logo img {
   width: 10%;
 }
+
+.support-nav-items {
+  display: flex;
+  align-items: center; 
+}
+
 .Nav-menu-items {
   display: flex;
-  padding-right: 100px;
+  justify-content: space-between;
+  align-items: center; 
+  width: 50%; 
 }
-.Nav-menu-item-Featured > ul {
-  display: none;
-}
-.Nav-menu-item-Men > ul{
-  display: none;
-}
-.Nav-menu-item-Women > ul{
-  display: none;
-}
-.Nav-menu-item-Kids > ul{
-  display: none;
-}
-.Nav-menu-item-Jordan > ul{
-  display: none;
+
+.Nav-menu-items a {
+  text-decoration: none;
+  padding: 0 15px;
+  color: inherit; 
 }
