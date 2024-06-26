@@ -118,3 +118,9 @@ header {
 .HideYo{
   overflow-y: hidden;
 }
+.top-65{
+  top: 65%;
+}
+.left-5{
+  left: 5%;
+}
