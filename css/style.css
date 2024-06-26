@@ -124,3 +124,9 @@ header {
 .left-5{
   left: 5%;
 }
+.w-80p{
+  width: 80px;
+}
+.w-450p{
+  width: 450px;
+}
