@@ -38,7 +38,27 @@
   border-radius: 20px;
   transform-style: preserve-3d;
 }
-
+.container .Green {
+  transition: all 0.2s;
+  box-shadow: 3px 4px 20px #adeb306f;
+}
+.container .Blue {
+  transition: all 0.2s;
+  box-shadow: 3px 4px 20px #36cbe962;
+}
+.container .Red {
+  transition: all 0.2s;
+  box-shadow: 3px 4px 20px #eb0e2f5b;
+}
+.container .Green:hover {
+  box-shadow: 3px 4px 20px #adeb30;
+}
+.container .Blue:hover {
+  box-shadow: 3px 4px 20px #36cbe9;
+}
+.container .Red:hover {
+  box-shadow: 3px 4px 20px #eb0e2f;
+}
 .container .box::before {
   content: "NIKE";
   position: absolute;
@@ -144,7 +164,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  max-width: 300px;
+  max-width: 280px;
   transition: 0.5s;
   z-index: 11;
   transition: 0.5s;
