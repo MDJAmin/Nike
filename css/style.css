@@ -115,3 +115,6 @@ header {
     }
   }
 }
+.HideYo{
+  overflow-y: hidden;
+}
