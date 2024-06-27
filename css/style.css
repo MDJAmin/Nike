@@ -130,14 +130,12 @@ header {
 .w-450p {
   width: 450px;
 }
-#category-section{
-  min-height: 676px;
-}
-div.drop-down-menu-end {
+
+div.drop-down-menu-category {
 height: 300px;
   transition: all 0.5s;
   position: relative;
 }
-.drop-down-menu-end:hover {
+.drop-down-menu-category:hover {
 height: 676px;
 }
