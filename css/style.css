@@ -132,10 +132,51 @@ header {
 }
 
 div.drop-down-menu-category {
-height: 300px;
+  height: 300px;
   transition: all 0.5s;
   position: relative;
 }
 .drop-down-menu-category:hover {
-height: 676px;
+  height: 676px;
+}
+.hr-faded {
+  display: flex;
+  margin: auto;
+  opacity: 0.2;
+  width: 95%;
+  height: 1px;
+  background-color: black;
+}
+.Guides-drop-down-menu {
+  opacity: 0;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 2%;
+  left: 24.5%;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 3px 0.1px rgba(0, 0, 0, 0.41);
+  padding: 15px;
+  padding-right: 50px;
+  border-radius: 10px;
+  list-style: none;
+  z-index: 10000;
+}
+.Guides-items:hover div.Guides-drop-down-menu {
+  opacity: 1;
+  display: flex;
+}
+.Guides-drop-down-menu a {
+  padding: 5px 0;
+  opacity: 0.7;
+}
+.privacy-img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -3.5px;
+}
+footer {
+  position: relative;
+  min-height: 550px;
 }
