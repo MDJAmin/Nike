@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/card.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -229,59 +231,69 @@
         </section>
 
         <!-- Products category -->
-        <!-- <section>
-            <div>
-                <h4>Featured</h4>
-                <a href="">Air Force 1</a>
-                <a href="">Jordan 1</a>
-                <a href="">Metcon</a>
-                <a href="">Air Max 270</a>
-                <a href="">Air Max 97</a>
-                <a href="">Air Max 90</a>
-                <a href="">Blazer</a>
-                <a href="">Pegasus</a>
+        <section id="category-section" class="mx-5 px-5">
+            <div class="drop-down-menu-end d-flex justify-content-around gap-5">
+                <div class="HideYo">
+                    <p class="pb-2 font-weight-bold fs-4">Featured</p>
+                    <div class="d-flex flex-column gap-4">
+                        <a class="text-dark list-group-item opacity-75" href="">Air Force 1</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Jordan 1</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Metcon</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Air Max 270</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Air Max 97</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Air Max 90</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Blazer</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Pegasus</a>
+                    </div>
+                </div>
+                <div class="HideYo">
+                    <p class="pb-2 font-weight-bold fs-4">Shoes</p>
+                    <div class="d-flex flex-column gap-4">
+                        <a class="text-dark list-group-item opacity-75" href="">All Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Jordan Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Running Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Basketball Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Tennis Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Training Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Custom Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Sale Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Soccer Cleats</a>
+                    </div>
+                </div>
+                <div class="HideYo">
+                    <p class="pb-2 font-weight-bold fs-4">Clothing</p>
+                    <div class="d-flex flex-column gap-4">
+                        <a class="text-dark list-group-item opacity-75" href="">All Clothing</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Tops & T-Shirts</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Shorts</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Hoodies & Pullovers</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Joggers & Sweatpants</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Sports Bras</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Pants & Tights</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Socks</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Yoga</a>
+                        <a class="text-dark list-group-item opacity-75" href="">NikeLab</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Plus Size</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Big & Tall</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Sale Clothing</a>
+                    </div>
+                </div>
+                <div class="HideYo">
+                    <p class="pb-2 font-weight-bold fs-4">Kids</p>
+                    <div class="d-flex flex-column gap-4">
+                        <a class="text-dark list-group-item opacity-75" href="">Infant & Toddler Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Kids Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Kids Basketball Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Kids Running Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Kids Jordan Shoes</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Kids Clothing</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Kids Backpacks</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Kids Socks</a>
+                        <a class="text-dark list-group-item opacity-75" href="">Kids Sale</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Shoes</h4>
-                <a href="">All Shoes</a>
-                <a href="">Jordan Shoes</a>
-                <a href="">Running Shoes</a>
-                <a href="">Basketball Shoes</a>
-                <a href="">Tennis Shoes</a>
-                <a href="">Training Shoes</a>
-                <a href="">Custom Shoes</a>
-                <a href="">Sale Shoes</a>
-                <a href="">Soccer Cleats</a>
-            </div>
-            <div>
-                <h4>Clothing</h4>
-                <a href="">All Clothing</a>
-                <a href="">Tops & T-Shirts</a>
-                <a href="">Shorts</a>
-                <a href="">Hoodies & Pullovers</a>
-                <a href="">Joggers & Sweatpants</a>
-                <a href="">Sports Bras</a>
-                <a href="">Pants & Tights</a>
-                <a href="">Socks</a>
-                <a href="">Yoga</a>
-                <a href="">NikeLab</a>
-                <a href="">Plus Size</a>
-                <a href="">Big & Tall</a>
-                <a href="">Sale Clothing</a>
-            </div>
-            <div>
-                <h4>Kids</h4>
-                <a href="">Infant & Toddler Shoes</a>
-                <a href="">Kids Shoes</a>
-                <a href="">Kids Basketball Shoes</a>
-                <a href="">Kids Running Shoes</a>
-                <a href="">Kids Jordan Shoes</a>
-                <a href="">Kids Clothing</a>
-                <a href="">Kids Backpacks</a>
-                <a href="">Kids Socks</a>
-                <a href="">Kids Sale</a>
-            </div>
-        </section> -->
+        </section>
     </body>
 
     <!-- <footer>
@@ -361,6 +373,9 @@
             <a href="">CA Supply Chains Act</a>
         </div>
     </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/cardanimation.js"></script>
     <script>

@@ -8,7 +8,7 @@
   user-select: none;
   font-family: Arial, sans-serif;
 }
-.Title{
+.Title {
   font-family: "Poppins", sans-serif;
 }
 /* Start nav style */
@@ -88,7 +88,7 @@ header {
       padding: 10px 10px;
       cursor: pointer;
     }
-    &:hover i.bx-search{
+    &:hover i.bx-search {
       background-color: rgb(224, 224, 224);
     }
   }
@@ -115,18 +115,29 @@ header {
     }
   }
 }
-.HideYo{
+.HideYo {
   overflow-y: hidden;
 }
-.top-65{
+.top-65 {
   top: 65%;
 }
-.left-5{
+.left-5 {
   left: 5%;
 }
-.w-80p{
+.w-80p {
   width: 80px;
 }
-.w-450p{
+.w-450p {
   width: 450px;
+}
+#category-section{
+  min-height: 676px;
+}
+div.drop-down-menu-end {
+height: 300px;
+  transition: all 0.5s;
+  position: relative;
+}
+.drop-down-menu-end:hover {
+height: 676px;
 }
