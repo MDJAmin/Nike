@@ -2,22 +2,12 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-
 :root {
   --main-bg: #f8f8f8;
   --box-bg: #ffffff;
   --name-color: #232323;
   --card-bg-text: #343434;
 }
-
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: var(--main-bg);
-} */
-
 .container {
   user-select: none;
   position: relative;
@@ -28,7 +18,6 @@
   width: 1200px;
   transform-style: preserve-3d;
 }
-
 .container .box {
   position: relative;
   width: 300px;
@@ -71,7 +60,6 @@
   opacity: 0;
   transition: 0.5s;
 }
-
 .container .box::after {
   content: "SHOES";
   position: absolute;
@@ -84,12 +72,10 @@
   opacity: 0;
   transition: 0.5s;
 }
-
 .container .box:hover::after,
 .container .box:hover::before {
   opacity: 0.04;
 }
-
 .container .box .name {
   position: absolute;
   top: 0;
@@ -103,12 +89,10 @@
   opacity: 0;
   z-index: 10;
 }
-
 .container .box:hover .name {
   top: 40px;
   opacity: 1;
 }
-
 .container .box .buy {
   position: absolute;
   bottom: 0;
@@ -124,12 +108,10 @@
   opacity: 0;
   z-index: 10;
 }
-
 .container .box:hover .buy {
   bottom: 30px;
   opacity: 1;
 }
-
 .container .box .circle {
   position: absolute;
   top: 50%;
@@ -144,7 +126,6 @@
   opacity: 1;
   transform: translate3d(-50%, -50%, 0px);
 }
-
 .container .box:hover .circle {
   position: absolute;
   top: 50%;
@@ -159,7 +140,6 @@
   opacity: 1;
   transform: translate3d(-50%, -50%, 35px);
 }
-
 .container .box .product {
   position: absolute;
   top: 50%;
@@ -171,26 +151,21 @@
   transform-style: preserve-3d;
   transform: translate3d(-50%, -50%, 0px) rotate(-15deg);
 }
-
 .container .box:hover .product {
   transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
 }
-
 .container .box:nth-child(1) .circle,
 .container .box:nth-child(1) .buy {
   background: #9bdc28;
 }
-
 .container .box:nth-child(2) .circle,
 .container .box:nth-child(2) .buy {
   background: #1da3c3;
 }
-
 .container .box:nth-child(3) .circle,
 .container .box:nth-child(3) .buy {
   background: #eb0e2f;
 }
-
 .mode-switch {
   background-color: transparent;
   border: none;
@@ -200,7 +175,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .mode-switch.active .moon {
   fill: var(--name-color);
 }

@@ -1,3 +1,4 @@
+/* Normalization */
 * {
   padding: 0;
   margin: 0;
@@ -8,21 +9,46 @@
   user-select: none;
   font-family: Arial, sans-serif;
 }
+
+/* Classes */
 .Title {
   font-family: "Poppins", sans-serif;
 }
+.hr-faded {
+  display: flex;
+  margin: auto;
+  opacity: 0.2;
+  width: 95%;
+  height: 1px;
+  background-color: black;
+}
+.HideYo {
+  overflow-y: hidden;
+}
+.top-65 {
+  top: 65%;
+}
+.left-5 {
+  left: 5%;
+}
+.w-80p {
+  width: 80px;
+}
+.w-450p {
+  width: 450px;
+}
+
 /* Start nav style */
 nav div.nav-items {
   background-color: #f5f5f5;
   height: 45px;
 }
-svg {
+nav svg {
   width: 50px;
 }
 nav div.nav-items a {
   font-size: 0.85em;
 }
-
 header {
   height: 60px;
   padding: 0 50px;
@@ -30,16 +56,13 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 .nike-logo img {
-  width: 10%;
+  width: 11%;
 }
-
 .support-nav-items {
   display: flex;
   align-items: center;
 }
-
 .Nav-menu-items {
   display: flex;
   justify-content: space-between;
@@ -48,14 +71,17 @@ header {
   position: relative;
   left: -200px;
 }
-
 .Nav-menu-items a {
   text-decoration: none;
   padding: 0 15px;
   color: inherit;
   font-weight: bolder;
+  border-bottom: solid 1.5px transparent;
+  transition: all 0.5s;
 }
-
+div.Nav-menu-items a:hover {
+  border-bottom: solid 1.5px black;
+}
 .support-nav-items {
   display: flex;
   align-items: center;
@@ -78,7 +104,6 @@ header {
         border-color: #aaa;
       }
     }
-
     i.bx-search {
       position: absolute;
       right: 127px;
@@ -92,12 +117,10 @@ header {
       background-color: rgb(224, 224, 224);
     }
   }
-
   .icons-container {
     display: flex;
     align-items: center;
     margin-left: 20px;
-
     a {
       display: flex;
       align-items: center;
@@ -108,29 +131,14 @@ header {
       margin-left: 10px;
       color: #333;
       text-decoration: none;
-
       i {
         font-size: 20px;
       }
     }
   }
 }
-.HideYo {
-  overflow-y: hidden;
-}
-.top-65 {
-  top: 65%;
-}
-.left-5 {
-  left: 5%;
-}
-.w-80p {
-  width: 80px;
-}
-.w-450p {
-  width: 450px;
-}
 
+/* Start category section  */
 div.drop-down-menu-category {
   height: 300px;
   transition: all 0.5s;
@@ -139,13 +147,11 @@ div.drop-down-menu-category {
 .drop-down-menu-category:hover {
   height: 676px;
 }
-.hr-faded {
-  display: flex;
-  margin: auto;
-  opacity: 0.2;
-  width: 95%;
-  height: 1px;
-  background-color: black;
+
+/* Start footer */
+footer {
+  position: relative;
+  min-height: 550px;
 }
 .Guides-drop-down-menu {
   opacity: 0;
@@ -175,8 +181,4 @@ div.drop-down-menu-category {
   height: 30px;
   position: relative;
   top: -3.5px;
-}
-footer {
-  position: relative;
-  min-height: 550px;
 }
