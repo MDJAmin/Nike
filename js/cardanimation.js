@@ -70,12 +70,12 @@ var VanillaTilt = (function () {
           this.onMouseMoveBind
         ),
         (this.glare || this.fullPageListening) &&
-          window.addEventListener("resize", this.onWindowResizeBind),
+        window.addEventListener("resize", this.onWindowResizeBind),
         this.gyroscope &&
-          window.addEventListener(
-            "deviceorientation",
-            this.onDeviceOrientationBind
-          );
+        window.addEventListener(
+          "deviceorientation",
+          this.onDeviceOrientationBind
+        );
     }
     removeEventListeners() {
       this.elementListener.removeEventListener(
@@ -91,12 +91,12 @@ var VanillaTilt = (function () {
           this.onMouseMoveBind
         ),
         this.gyroscope &&
-          window.removeEventListener(
-            "deviceorientation",
-            this.onDeviceOrientationBind
-          ),
+        window.removeEventListener(
+          "deviceorientation",
+          this.onDeviceOrientationBind
+        ),
         (this.glare || this.fullPageListening) &&
-          window.removeEventListener("resize", this.onWindowResizeBind);
+        window.removeEventListener("resize", this.onWindowResizeBind);
     }
     destroy() {
       clearTimeout(this.transitionTimeout),
@@ -111,7 +111,7 @@ var VanillaTilt = (function () {
       if (null === t.gamma || null === t.beta) return;
       this.updateElementPosition(),
         this.gyroscopeSamples > 0 &&
-          ((this.lastgammazero = this.gammazero),
+        ((this.lastgammazero = this.gammazero),
           (this.lastbetazero = this.betazero),
           null === this.gammazero
             ? ((this.gammazero = t.gamma), (this.betazero = t.beta))
@@ -119,7 +119,7 @@ var VanillaTilt = (function () {
               (this.betazero = (t.beta + this.lastbetazero) / 2)),
           (this.gyroscopeSamples -= 1));
       const e =
-          this.settings.gyroscopeMaxAngleX - this.settings.gyroscopeMinAngleX,
+        this.settings.gyroscopeMaxAngleX - this.settings.gyroscopeMinAngleX,
         i = this.settings.gyroscopeMaxAngleY - this.settings.gyroscopeMinAngleY,
         s = e / this.width,
         n = i / this.height,
@@ -149,44 +149,44 @@ var VanillaTilt = (function () {
         clientY: this.top + this.height / 2,
       }),
         this.element &&
-          this.element.style &&
-          (this.element.style.transform =
-            `perspective(${this.settings.perspective}px) ` +
-            "rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)"),
+        this.element.style &&
+        (this.element.style.transform =
+          `perspective(${this.settings.perspective}px) ` +
+          "rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)"),
         this.resetGlare();
     }
     resetGlare() {
       this.glare &&
         ((this.glareElement.style.transform =
           "rotate(180deg) translate(-50%, -50%)"),
-        (this.glareElement.style.opacity = "0"));
+          (this.glareElement.style.opacity = "0"));
     }
     updateInitialPosition() {
       if (0 === this.settings.startX && 0 === this.settings.startY) return;
       this.onMouseEnter(),
         this.fullPageListening
           ? (this.event = {
-              clientX:
-                ((this.settings.startX + this.settings.max) /
-                  (2 * this.settings.max)) *
-                this.clientWidth,
-              clientY:
-                ((this.settings.startY + this.settings.max) /
-                  (2 * this.settings.max)) *
-                this.clientHeight,
-            })
+            clientX:
+              ((this.settings.startX + this.settings.max) /
+                (2 * this.settings.max)) *
+              this.clientWidth,
+            clientY:
+              ((this.settings.startY + this.settings.max) /
+                (2 * this.settings.max)) *
+              this.clientHeight,
+          })
           : (this.event = {
-              clientX:
-                this.left +
-                ((this.settings.startX + this.settings.max) /
-                  (2 * this.settings.max)) *
-                  this.width,
-              clientY:
-                this.top +
-                ((this.settings.startY + this.settings.max) /
-                  (2 * this.settings.max)) *
-                  this.height,
-            });
+            clientX:
+              this.left +
+              ((this.settings.startX + this.settings.max) /
+                (2 * this.settings.max)) *
+              this.width,
+            clientY:
+              this.top +
+              ((this.settings.startY + this.settings.max) /
+                (2 * this.settings.max)) *
+              this.height,
+          });
       let t = this.settings.scale;
       (this.settings.scale = 1),
         this.update(),
@@ -247,10 +247,9 @@ var VanillaTilt = (function () {
         this.settings.scale +
         ")"),
         this.glare &&
-          ((this.glareElement.style.transform = `rotate(${t.angle}deg) translate(-50%, -50%)`),
-          (this.glareElement.style.opacity = `${
-            (t.percentageY * this.settings["max-glare"]) / 100
-          }`)),
+        ((this.glareElement.style.transform = `rotate(${t.angle}deg) translate(-50%, -50%)`),
+          (this.glareElement.style.opacity = `${(t.percentageY * this.settings["max-glare"]) / 100
+            }`)),
         this.element.dispatchEvent(
           new CustomEvent("tiltChange", { detail: t })
         ),
@@ -270,15 +269,15 @@ var VanillaTilt = (function () {
           ".js-tilt-glare-inner"
         )),
         this.glarePrerender ||
-          (Object.assign(this.glareElementWrapper.style, {
-            position: "absolute",
-            top: "0",
-            left: "0",
-            width: "100%",
-            height: "100%",
-            overflow: "hidden",
-            "pointer-events": "none",
-          }),
+        (Object.assign(this.glareElementWrapper.style, {
+          position: "absolute",
+          top: "0",
+          left: "0",
+          width: "100%",
+          height: "100%",
+          overflow: "hidden",
+          "pointer-events": "none",
+        }),
           Object.assign(this.glareElement.style, {
             position: "absolute",
             top: "50%",
@@ -323,7 +322,7 @@ var VanillaTilt = (function () {
         (this.element.style.transition =
           this.settings.speed + "ms " + this.settings.easing),
         this.glare &&
-          (this.glareElement.style.transition = `opacity ${this.settings.speed}ms ${this.settings.easing}`),
+        (this.glareElement.style.transition = `opacity ${this.settings.speed}ms ${this.settings.easing}`),
         (this.transitionTimeout = setTimeout(() => {
           (this.element.style.transition = ""),
             this.glare && (this.glareElement.style.transition = "");
@@ -331,29 +330,29 @@ var VanillaTilt = (function () {
     }
     extendSettings(t) {
       let e = {
-          reverse: !1,
-          max: 15,
-          startX: 0,
-          startY: 0,
-          perspective: 1e3,
-          easing: "cubic-bezier(.03,.98,.52,.99)",
-          scale: 1,
-          speed: 300,
-          transition: !0,
-          axis: null,
-          glare: !1,
-          "max-glare": 1,
-          "glare-prerender": !1,
-          "full-page-listening": !1,
-          "mouse-event-element": null,
-          reset: !0,
-          gyroscope: !0,
-          gyroscopeMinAngleX: -45,
-          gyroscopeMaxAngleX: 45,
-          gyroscopeMinAngleY: -45,
-          gyroscopeMaxAngleY: 45,
-          gyroscopeSamples: 10,
-        },
+        reverse: !1,
+        max: 15,
+        startX: 0,
+        startY: 0,
+        perspective: 1e3,
+        easing: "cubic-bezier(.03,.98,.52,.99)",
+        scale: 1,
+        speed: 300,
+        transition: !0,
+        axis: null,
+        glare: !1,
+        "max-glare": 1,
+        "glare-prerender": !1,
+        "full-page-listening": !1,
+        "mouse-event-element": null,
+        reset: !0,
+        gyroscope: !0,
+        gyroscopeMinAngleX: -45,
+        gyroscopeMaxAngleX: 45,
+        gyroscopeMinAngleY: -45,
+        gyroscopeMaxAngleY: 45,
+        gyroscopeSamples: 10,
+      },
         i = {};
       for (var s in e)
         if (s in t) i[s] = t[s];
@@ -371,14 +370,14 @@ var VanillaTilt = (function () {
       e instanceof Node && (e = [e]),
         e instanceof NodeList && (e = [].slice.call(e)),
         e instanceof Array &&
-          e.forEach((e) => {
-            "vanillaTilt" in e || (e.vanillaTilt = new t(e, i));
-          });
+        e.forEach((e) => {
+          "vanillaTilt" in e || (e.vanillaTilt = new t(e, i));
+        });
     }
   }
   return (
     "undefined" != typeof document &&
-      ((window.VanillaTilt = t),
+    ((window.VanillaTilt = t),
       t.init(document.querySelectorAll("[data-tilt]"))),
     t
   );
