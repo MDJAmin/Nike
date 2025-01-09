@@ -5,7 +5,6 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  overflow-x: hidden;
   user-select: none;
   font-family: Arial, sans-serif;
 }
@@ -96,7 +95,7 @@ div.Nav-menu-items a:hover {
       padding: 8px 20px 8px 40px;
       border: 1px solid #ddd;
       border-radius: 20px;
-      width: 270px;
+      width: 144px;
       font-size: 14px;
 
       &:focus {
@@ -106,7 +105,7 @@ div.Nav-menu-items a:hover {
     }
     i.bx-search {
       position: absolute;
-      right: 127px;
+      right: 105px;
       color: #aaa;
       font-size: 18px;
       border-radius: 50%;
@@ -120,12 +119,11 @@ div.Nav-menu-items a:hover {
   .icons-container {
     display: flex;
     align-items: center;
-    margin-left: 20px;
     a {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 70px;
+      width: 20px;
       border-radius: 50%;
       background-color: #ffffff;
       margin-left: 10px;
