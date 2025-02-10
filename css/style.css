@@ -158,6 +158,23 @@ div.drop-down-menu-category {
   height: 676px;
 }
 
+@media (max-width: 880px){
+  .drop-down-menu-category{
+    font-size: 13px;
+    gap: 0 !important;
+  } 
+}
+@media (max-width: 690px){
+  .drop-down-menu-category{
+    font-size: 9px;
+    gap: 0 !important;
+  } 
+}
+@media (max-width: 580px){
+  .category-section, .drop-down-menu-category{
+display: none !important;
+  } 
+}
 /* Start footer */
 footer {
   position: relative;
