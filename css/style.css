@@ -136,6 +136,18 @@ div.Nav-menu-items a:hover {
   }
 }
 
+/* Product section  */
+@media (max-width: 800px) {
+  .row-1-2 {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .row-1-2 h4,
+  span {
+    font-size: 15px !important;
+  }
+}
 /* Start category section  */
 div.drop-down-menu-category {
   height: 300px;
@@ -149,7 +161,7 @@ div.drop-down-menu-category {
 /* Start footer */
 footer {
   position: relative;
-  min-height: 550px;
+  min-height: 500px;
 }
 .Guides-drop-down-menu {
   opacity: 0;
