@@ -8,6 +8,9 @@
   --name-color: #232323;
   --card-bg-text: #343434;
 }
+.OverFlowYHidden{
+  overflow-y: hidden;
+}
 .container {
   user-select: none;
   position: relative;
