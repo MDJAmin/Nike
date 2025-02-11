@@ -21,9 +21,6 @@
   height: 1px;
   background-color: black;
 }
-.HideYo {
-  overflow-y: hidden;
-}
 .top-65 {
   top: 65%;
 }
@@ -181,6 +178,8 @@ div.Nav-menu-items a:hover {
 }
 
 /* Product section  */
+
+
 @media (max-width: 800px) {
   .row-1-2 {
     flex-direction: column;
@@ -190,6 +189,24 @@ div.Nav-menu-items a:hover {
   .row-1-2 h4,
   span {
     font-size: 15px !important;
+  }
+  .PRODUCER-PACK-SECTION button.product_content{
+    width: 50px;
+    height: 25px;
+    font-size: 10px;
+    align-items: center;
+    display: flex;
+  }
+}
+
+/* NEW THIS WEEK  */
+@media (max-width: 370px) {
+  .Week-Title, .Week-Title h3{
+  margin: 10px 0 !important;
+  font-size: 20px !important;
+  }
+  .Week-Title button{
+    font-size: 13px !important;
   }
 }
 
@@ -201,6 +218,7 @@ div.Nav-menu-items a:hover {
   justify-content: center;
   margin: 30px 0;
 }
+
 
 @media (max-width: 500px) {
   .MEMBERSHIP_PRODUCT_SECTION div,
@@ -220,6 +238,28 @@ div.Nav-menu-items a:hover {
     width: 240px;
     height: 300px !important;
     font-size: 15px;
+  }
+  .Title{
+    font-size: 1em !important;  
+  }
+  .Membership-content {
+    top: 200px !important;
+    padding: 10px !important;
+  }
+  .MEMBERSHIP_PRODUCT_SECTION div button{
+    display: none;
+  }
+}
+@media (max-width: 300px){
+  .MEMBERSHIP_PRODUCT_SECTION div,
+  .MEMBERSHIP_PRODUCT_SECTION div img,
+  h4 {
+    width: 220px;
+    height: 280px !important;
+    font-size: 15px;
+  }
+  .Title{
+    font-size: 1em !important;  
   }
   .Membership-content {
     top: 200px !important;

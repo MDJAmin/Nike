@@ -137,7 +137,7 @@
   top: 50%;
   left: 50%;
   width: 200px;
-  height: 200px;
+  height: 200px !important;
   border-radius: 50%;
   transition: 0.5s;
   background: #ffffff;
@@ -159,6 +159,16 @@
   z-index: 10;
   opacity: 1;
   transform: translate3d(-50%, -50%, 35px);
+}
+@media (max-width: 300px) {
+  .container .box .circle{
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .container .box:hover .circle{
+    width: 150px !important;
+    height: 150px !important;
+  }
 }
 .container .box .product {
   position: absolute;
