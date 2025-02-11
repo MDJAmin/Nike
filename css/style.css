@@ -55,22 +55,22 @@ nav div.nav-items a {
   font-size: 0.85em;
 }
 header {
-  height: 60px;
   padding: 0 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.nike-logo{
+margin-right: 42px;
+}
 .nike-logo img {
-  width: 11%;
+  width: 100px;
 }
 .Nav-menu-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
-  position: relative;
-  left: -200px;
+  gap: 30px;
 }
 .Nav-menu-items a {
   text-decoration: none;
@@ -81,7 +81,6 @@ header {
   transition: all 0.5s;
   color: #33333395;
 }
-
 
 div.Nav-menu-items a:hover {
   color: rgb(0, 0, 0);
@@ -137,14 +136,47 @@ transition: all .5s;
 .icons-container a i:hover{
   color: black;
 }
-
-.bx-menu, .searchMini{
+.menu {
   display: none;
 }
-
-.bx-heart, .bx-user, .bx-shopping-bag{
-  
+.search {
+display: none;
 }
+
+@media (max-width: 1111px) {
+  .menu{
+    display: block;
+  }
+  .Nav-menu-items a{
+    display: none;
+  }
+}
+
+@media (max-width: 700px){
+  header{
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 550px){
+  header{
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 450px){
+  .bx-heart, .bx-user, .bx-shopping-bag, .search-container{
+  display: none;
+  }
+
+.search{
+  display: block;
+}
+.nike-logo img{
+  width: 70px;
+}
+}
+
 
 /* Product section  */
 @media (max-width: 800px) {
