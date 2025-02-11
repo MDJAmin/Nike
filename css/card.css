@@ -161,11 +161,11 @@
   transform: translate3d(-50%, -50%, 35px);
 }
 @media (max-width: 300px) {
-  .container .box .circle{
+  .container .box .circle {
     width: 150px !important;
     height: 150px !important;
   }
-  .container .box:hover .circle{
+  .container .box:hover .circle {
     width: 150px !important;
     height: 150px !important;
   }
