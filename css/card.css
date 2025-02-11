@@ -26,12 +26,12 @@
   border-radius: 20px;
   transform-style: preserve-3d;
 }
-@media (max-width:360px) {
+@media (max-width: 360px) {
   .container .box {
     width: 200px;
     height: 300px;
   }
-  .container img{
+  .container img {
     width: 200px;
   }
 }
@@ -68,17 +68,16 @@
   opacity: 0;
   transition: 0.5s;
 }
-@media (max-width:360px) {
-  .container .box::before{
+@media (max-width: 360px) {
+  .container .box::before {
     font-size: 1em;
     top: 0px !important;
   }
-  .container .box .name{
+  .container .box .name {
     font-size: 20px;
   }
-  .container .box .buy{
+  .container .box .buy {
     font-size: 10px;
-
   }
 }
 .container .box::after {
