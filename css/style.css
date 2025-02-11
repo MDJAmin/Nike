@@ -38,6 +38,12 @@
 }
 
 /* Start nav style */
+@media (max-width: 550px){
+.above-nav{
+display: none !important;
+}
+}
+
 nav div.nav-items {
   background-color: #f5f5f5;
   height: 45px;
@@ -58,10 +64,6 @@ header {
 .nike-logo img {
   width: 11%;
 }
-.support-nav-items {
-  display: flex;
-  align-items: center;
-}
 .Nav-menu-items {
   display: flex;
   justify-content: space-between;
@@ -77,63 +79,71 @@ header {
   font-weight: bolder;
   border-bottom: solid 1.5px transparent;
   transition: all 0.5s;
+  color: #33333395;
 }
+
+
 div.Nav-menu-items a:hover {
-  border-bottom: solid 1.5px black;
+  color: rgb(0, 0, 0);
 }
-.support-nav-items {
+
+.support-nav-items{
+display: flex;  
+}
+
+.search-container{
   display: flex;
   align-items: center;
+  position: relative;
+}
 
-  .search-container {
-    display: flex;
-    align-items: center;
-    position: relative;
+.search-container input{
+border-radius: 25px;
+padding: 6px;
+width: 150px;
+padding-right: 0px;
+padding-left: 40px;
+}
 
-    input {
-      position: relative;
-      padding: 8px 20px 8px 40px;
-      border: 1px solid #ddd;
-      border-radius: 20px;
-      width: 144px;
-      font-size: 14px;
+.search-container .bx-search{
+position: absolute;
+font-size: 1.2em;
+margin-left: 2px;
+color: rgb(92, 92, 92);
+padding: 10px;
+transition: all .5s;
+}
 
-      &:focus {
-        outline: none;
-        border-color: #aaa;
-      }
-    }
-    i.bx-search {
-      position: absolute;
-      right: 105px;
-      color: #aaa;
-      font-size: 18px;
-      border-radius: 50%;
-      padding: 10px 10px;
-      cursor: pointer;
-    }
-    &:hover i.bx-search {
-      background-color: rgb(224, 224, 224);
-    }
-  }
-  .icons-container {
-    display: flex;
-    align-items: center;
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 20px;
-      border-radius: 50%;
-      background-color: #ffffff;
-      margin-left: 10px;
-      color: #333;
-      text-decoration: none;
-      i {
-        font-size: 20px;
-      }
-    }
-  }
+.search-container .bx-search:hover{
+  color: black;
+  background-color: rgba(0, 0, 0, 0.173);
+  border-radius: 40px;
+}
+
+
+.icons-container{
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  gap: 5px;
+}
+
+.icons-container a i{
+  color: rgb(92, 92, 92);
+  font-size: 1.5em;
+  transition: color .5s;
+}
+
+.icons-container a i:hover{
+  color: black;
+}
+
+.bx-menu, .searchMini{
+  display: none;
+}
+
+.bx-heart, .bx-user, .bx-shopping-bag{
+  
 }
 
 /* Product section  */
