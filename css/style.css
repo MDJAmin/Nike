@@ -111,6 +111,7 @@ margin-left: 2px;
 color: rgb(92, 92, 92);
 padding: 10px;
 transition: all .5s;
+cursor: pointer;
 }
 
 .search-container .bx-search:hover{
@@ -190,6 +191,39 @@ display: none;
     font-size: 15px !important;
   }
 }
+
+/* MEMBERSHIP */
+
+.Title-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+@media (max-width: 500px) {
+  .MEMBERSHIP_PRODUCT_SECTION div, .MEMBERSHIP_PRODUCT_SECTION div img{
+    width: 340px;
+    height: 400px !important;
+  }
+  .Membership-content{
+    top: 270px !important;
+    padding: 10px !important;
+  }
+
+}
+@media (max-width: 370px){
+  .MEMBERSHIP_PRODUCT_SECTION div, .MEMBERSHIP_PRODUCT_SECTION div img,h4{
+    width: 240px;
+    height: 300px !important;
+    font-size: 15px;
+  }
+  .Membership-content{
+    top: 200px !important;
+    padding: 10px !important;
+  }
+}
+
 /* Start category section  */
 div.drop-down-menu-category {
   height: 300px;
